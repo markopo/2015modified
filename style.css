@@ -2794,8 +2794,8 @@ p > video {
 	}
 
 	.page-header {
-		border-bottom: 0;
-		border-left: 7px solid #333;
+		border: 1px solid #fefefe;
+        border-radius: 8px;
 		padding: 3.8461% 7.6923%;
 	}
 
