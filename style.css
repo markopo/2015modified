@@ -5998,14 +5998,14 @@ p > video {
 /*** ACF - nyheter custom fields  ***/
 
 .nyheter_text {
-    margin-top: 2% !important;
-    margin-bottom: 2% !important;
-    padding-top: 2% !important;
+    margin-top: 3.84615% !important;
+    margin-bottom: 3.84615% !important;
+    padding-top: 3.84615% !important;
 }
 
 .nyheter_text p {
-    padding: 0 2%;
-    margin-bottom: 2%;
+    padding: 0 3.84615%;
+    margin-bottom: 3.84615%;
     text-align: left;
     font-size: 0.8em;
     line-height: 1.1em;
@@ -6016,8 +6016,8 @@ p > video {
 /*** ACF - custom images **/
 
 .acf-custom-image {
-    margin-top: 2% !important;
-    padding-top: 2%;
+    margin-top: 3.84615% !important;
+    padding-top: 3.84615%;
 }
 
 .acf-custom-image a {
@@ -6025,29 +6025,27 @@ p > video {
 }
 
 .acf-custom-image h3 {
-    padding: 0 1%;
-    margin-bottom: 0.5%;
+    padding: 0 1.923075%;
+    margin-bottom: 0.9615375%;
     font-size: 1.35em;
     line-height: 2.0em;
 }
 
 .acf-custom-image img {
-    padding: 0 1%;
-    margin-bottom: 0.5%;
-    max-width: 820px;
-    height: auto;
+    padding: 0 1.923075%;
+    margin-bottom: 0.9615375%;
 }
 
 .acf-custom-image figcaption {
-    padding: 1%;
-    margin-bottom: 0.5%;
+    padding: 1.923075%;
+    margin-bottom: 0.9615375%;
 }
 
 .acf-custom-image figcaption p {
     font-size: 0.9em;
     line-height: 1.2em;
-    margin-bottom: 0.5%;
-    text-indent: 0.5em;
+    margin-bottom: 0.9615375%;
+    text-indent: 0.3em;
 }
 
 .acf-custom-image figcaption p + p {

@@ -48,7 +48,7 @@
     <figure>
         <h3><?php echo $acf_img_titel1; ?></h3>
         <a href="<?php echo $acf_img1['url'] ?>">
-        <img src="<?php echo $acf_img1['url'] ?>" alt="<?php echo $acf_img1['title'] ?>" title="<?php echo $acf_img1['title'] ?>" >
+        <img src="<?php echo $acf_img1['url'] ?>" height="<?php echo $acf_img1['height'] ?>" width="<?php echo $acf_img1['width'] ?>" alt="<?php echo $acf_img1['title'] ?>" title="<?php echo $acf_img1['title'] ?>" >
         </a>
         <figcaption>
             <?php echo $acf_img_bildtext1; ?>
@@ -69,7 +69,7 @@ $acf_img_titel2 = get_field('img_titel2');
         <figure>
             <h3><?php echo $acf_img_titel2; ?></h3>
             <a href="<?php echo $acf_img2['url'] ?>">
-                <img src="<?php echo $acf_img2['url'] ?>" alt="<?php echo $acf_img2['title'] ?>" title="<?php echo $acf_img2['title'] ?>" >
+                <img src="<?php echo $acf_img2['url'] ?>" height="<?php echo $acf_img2['height'] ?>" width="<?php echo $acf_img2['width'] ?>"  alt="<?php echo $acf_img2['title'] ?>" title="<?php echo $acf_img2['title'] ?>" >
             </a>
             <figcaption>
                 <?php echo $acf_img_bildtext2; ?>
@@ -91,7 +91,7 @@ $acf_img_titel3 = get_field('img_titel3');
         <figure>
             <h3><?php echo $acf_img_titel3; ?></h3>
             <a href="<?php echo $acf_img3['url'] ?>">
-                <img src="<?php echo $acf_img3['url'] ?>" alt="<?php echo $acf_img3['title'] ?>" title="<?php echo $acf_img3['title'] ?>" >
+                <img src="<?php echo $acf_img3['url'] ?>" height="<?php echo $acf_img3['height'] ?>" width="<?php echo $acf_img3['width'] ?>" alt="<?php echo $acf_img3['title'] ?>" title="<?php echo $acf_img3['title'] ?>" >
             </a>
             <figcaption>
                 <?php echo $acf_img_bildtext3; ?>
