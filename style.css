@@ -6011,3 +6011,47 @@ p > video {
     line-height: 1.1em;
     font-style: italic;
 }
+
+
+/*** ACF - custom images **/
+
+.acf-custom-image {
+    margin-top: 2% !important;
+    padding-top: 2%;
+}
+
+.acf-custom-image a {
+    border: 0 none;
+}
+
+.acf-custom-image h3 {
+    padding: 0 1%;
+    margin-bottom: 0.5%;
+    font-size: 1.35em;
+    line-height: 2.0em;
+}
+
+.acf-custom-image img {
+    padding: 0 1%;
+    margin-bottom: 0.5%;
+    max-width: 820px;
+    height: auto;
+}
+
+.acf-custom-image figcaption {
+    padding: 1%;
+    margin-bottom: 0.5%;
+}
+
+.acf-custom-image figcaption p {
+    font-size: 0.9em;
+    line-height: 1.2em;
+    margin-bottom: 0.5%;
+    text-indent: 0.5em;
+}
+
+.acf-custom-image figcaption p + p {
+    text-indent: 0em;
+}
+
+
