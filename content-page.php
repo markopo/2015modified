@@ -35,3 +35,19 @@
 	<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
 
 </article><!-- #post-## -->
+
+
+<?php
+    $acf_nyheter_text = get_field('nyheter_text');
+?>
+
+<?php if(isset($acf_nyheter_text) || !empty($acf_nyheter_text)): ?>
+<div class="nyheter_text hentry">
+  <p>
+      <?php echo $acf_nyheter_text; ?>
+  </p>
+</div>
+<?php endif; ?>
+
+
+

@@ -5993,3 +5993,21 @@ p > video {
 		padding: 0;
 	}
 }
+
+
+/*** ACF - nyheter custom fields  ***/
+
+.nyheter_text {
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+    padding-top: 2% !important;
+}
+
+.nyheter_text p {
+    padding: 0 2%;
+    margin-bottom: 2%;
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.1em;
+    font-style: italic;
+}
