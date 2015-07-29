@@ -36,69 +36,31 @@
 
 </article><!-- #post-## -->
 
+
+<?php for($acf_img_index = 1;$acf_img_index<10;$acf_img_index++): ?>
 <?php
-    /** Bild1 */
-    $acf_img1 = get_field('img1');
-    $acf_img_bildtext1 = get_field('img_bildtext1');
-    $acf_img_titel1 = get_field('img_titel1');
+    /** Bilden */
+    $acf_img = get_field("img$acf_img_index");
+    $acf_img_bildtext = get_field("img_bildtext$acf_img_index");
+    $acf_img_titel = get_field("img_titel$acf_img_index");
 ?>
 
-<?php if($acf_img1 != false && $acf_img_bildtext1 != false && $acf_img_titel1 != false): ?>
+<?php if($acf_img != false && $acf_img_bildtext != false && $acf_img_titel != false): ?>
 <div class="acf-custom-image hentry">
     <figure>
-        <h3><?php echo $acf_img_titel1; ?></h3>
-        <a href="<?php echo $acf_img1['url'] ?>">
-        <img src="<?php echo $acf_img1['url'] ?>" height="<?php echo $acf_img1['height'] ?>" width="<?php echo $acf_img1['width'] ?>" alt="<?php echo $acf_img1['title'] ?>" title="<?php echo $acf_img1['title'] ?>" >
+        <h3><?php echo $acf_img_titel; ?></h3>
+        <a href="<?php echo $acf_img['url'] ?>">
+        <img src="<?php echo $acf_img['url'] ?>" height="<?php echo $acf_img['height'] ?>" width="<?php echo $acf_img['width'] ?>" alt="<?php echo $acf_img['title'] ?>" title="<?php echo $acf_img['title'] ?>" >
         </a>
         <figcaption>
-            <?php echo $acf_img_bildtext1; ?>
+            <?php echo $acf_img_bildtext; ?>
         </figcaption>
     </figure>
 </div>
 <?php endif; ?>
-
-<?php
-/** Bild2 */
-$acf_img2 = get_field('img2');
-$acf_img_bildtext2 = get_field('img_bildtext2');
-$acf_img_titel2 = get_field('img_titel2');
-?>
-
-<?php if($acf_img2 != false && $acf_img_bildtext2 != false && $acf_img_titel2 != false): ?>
-    <div class="acf-custom-image hentry">
-        <figure>
-            <h3><?php echo $acf_img_titel2; ?></h3>
-            <a href="<?php echo $acf_img2['url'] ?>">
-                <img src="<?php echo $acf_img2['url'] ?>" height="<?php echo $acf_img2['height'] ?>" width="<?php echo $acf_img2['width'] ?>"  alt="<?php echo $acf_img2['title'] ?>" title="<?php echo $acf_img2['title'] ?>" >
-            </a>
-            <figcaption>
-                <?php echo $acf_img_bildtext2; ?>
-            </figcaption>
-        </figure>
-    </div>
-<?php endif; ?>
+<?php endfor; ?>
 
 
-<?php
-/** Bild3 */
-$acf_img3 = get_field('img3');
-$acf_img_bildtext3 = get_field('img_bildtext3');
-$acf_img_titel3 = get_field('img_titel3');
-?>
-
-<?php if($acf_img3 != false && $acf_img_bildtext3 != false && $acf_img_titel3 != false): ?>
-    <div class="acf-custom-image hentry">
-        <figure>
-            <h3><?php echo $acf_img_titel3; ?></h3>
-            <a href="<?php echo $acf_img3['url'] ?>">
-                <img src="<?php echo $acf_img3['url'] ?>" height="<?php echo $acf_img3['height'] ?>" width="<?php echo $acf_img3['width'] ?>" alt="<?php echo $acf_img3['title'] ?>" title="<?php echo $acf_img3['title'] ?>" >
-            </a>
-            <figcaption>
-                <?php echo $acf_img_bildtext3; ?>
-            </figcaption>
-        </figure>
-    </div>
-<?php endif; ?>
 
 
 <?php
