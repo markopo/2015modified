@@ -19,6 +19,9 @@ if ( post_password_required() ) {
 	return;
 }
 
+/**
+ * Don't show comments if it's page. 
+ */
 $ispage = get_post_class()[1] === "page";
 if($ispage){
     return;
