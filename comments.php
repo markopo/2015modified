@@ -18,6 +18,12 @@
 if ( post_password_required() ) {
 	return;
 }
+
+$ispage = get_post_class()[1] === "page";
+if($ispage){
+    return;
+}
+
 ?>
 
 <div id="comments" class="comments-area">
