@@ -52,6 +52,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 
+
 /**
  * 1.0 - Reset
  *
@@ -208,7 +209,7 @@ input,
 select,
 textarea {
 	color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	font-size: 1.5rem;
 	line-height: 1.6;
@@ -266,7 +267,7 @@ blockquote small {
 	color: #333;
 	font-size: 15px;
 	font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 	line-height: 1.6;
 }
 
@@ -450,23 +451,23 @@ del {
 
 ::-webkit-input-placeholder {
 	color: rgba(51, 51, 51, 0.7);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 :-moz-placeholder {
 	color: rgba(51, 51, 51, 0.7);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 ::-moz-placeholder {
 	color: rgba(51, 51, 51, 0.7);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 	opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */
 }
 
 :-ms-input-placeholder {
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -533,7 +534,7 @@ input[type="submit"] {
 	border: 0;
 	color: #fff;
 	cursor: pointer;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 700;
@@ -601,7 +602,7 @@ textarea:focus {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
 	display: block;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 700;
@@ -697,7 +698,7 @@ a:focus {
 .main-navigation .menu-item-description {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 400;
@@ -939,7 +940,7 @@ a:focus {
 .post-navigation .meta-nav {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	letter-spacing: 0.04em;
@@ -950,7 +951,7 @@ a:focus {
 }
 
 .post-navigation .post-title {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	font-size: 1.8rem;
 	line-height: 1.3333;
@@ -994,7 +995,7 @@ a:focus {
 	background-color: #fff;
     border: 1px solid #f3f3f3;
     border-radius: 8px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .pagination .nav-links {
@@ -1079,7 +1080,7 @@ a:focus {
 	color: rgba(51, 51, 51, 0.7);
 	font-size: 12px;
 	font-size: 1.2rem;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	line-height: 1.5;
 	text-transform: uppercase;
@@ -1295,7 +1296,7 @@ img.aligncenter {
 }
 
 .site-title {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 22px;
 	font-size: 2.2rem;
 	font-weight: 700;
@@ -1305,7 +1306,7 @@ img.aligncenter {
 
 .site-description {
 	display: none;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 400;
@@ -1369,7 +1370,7 @@ img.aligncenter {
 
 .widget-title {
 	color: #333;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin: 0 0 1.6em;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
@@ -1510,7 +1511,7 @@ img.aligncenter {
 
 .widget_rss .rss-date,
 .widget_rss cite {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-style: normal;
@@ -1781,7 +1782,7 @@ a.post-thumbnail:focus {
 .author-heading {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	letter-spacing: 0.04em;
@@ -1837,7 +1838,7 @@ a.post-thumbnail:focus {
 	background-color: #fff;
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 1.5;
@@ -2014,7 +2015,7 @@ a.post-thumbnail:focus {
 
 .page-links {
 	clear: both;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin-bottom: 1.3333em;
 }
 
@@ -2072,7 +2073,7 @@ a.post-thumbnail:focus {
 .entry-caption {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	-webkit-hyphens: auto;
@@ -2211,7 +2212,7 @@ a.post-thumbnail:focus {
 .pingback .edit-link {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 1.5;
@@ -2276,7 +2277,7 @@ a.post-thumbnail:focus {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
 	display: inline-block;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	line-height: 1;
 	margin-top: 2em;
@@ -2298,7 +2299,7 @@ a.post-thumbnail:focus {
 .comment-form label {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 700;
@@ -2321,7 +2322,7 @@ a.post-thumbnail:focus {
 .form-allowed-tags {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 1.5;
@@ -2337,7 +2338,7 @@ a.post-thumbnail:focus {
 	border-top: 1px solid rgba(51, 51, 51, 0.1);
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	padding-top: 1.6em;
 }
@@ -2488,7 +2489,7 @@ p > video {
 .wp-caption-text {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 1.5;
@@ -2552,7 +2553,7 @@ p > video {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
 	display: block;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 1.5;
@@ -2608,7 +2609,7 @@ p > video {
 .widecolumn .mu_register label {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 700;

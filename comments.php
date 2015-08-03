@@ -20,7 +20,7 @@ if ( post_password_required() ) {
 }
 
 /**
- * Don't show comments if it's page. 
+ * Don't show comments if it's page.
  */
 $ispage = get_post_class()[1] === "page";
 if($ispage){
