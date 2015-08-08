@@ -36,7 +36,47 @@
 
 </article><!-- #post-## -->
 
+<!-- featherlight gallery -- start -->
+<?php
+    $has_featherlightimages = false;
+?>
 
+<div id="gallery-container-<?php echo get_the_ID() ?>" class="acf-custom-image hentry" >
+    <?php
+        $acf_gallery_title = get_field("img_gallery_title");
+    ?>
+    <?php if($acf_gallery_title != false): ?>
+        <h3><?php echo $acf_gallery_title; ?></h3>
+    <?php endif; ?>
+
+    <?php for($acf_img_gallery_index = 1;$acf_img_gallery_index<24;$acf_img_gallery_index++): ?>
+        <?php
+            $acf_img_gallery_thumbnail = get_field("img_gallery_thumbnail$acf_img_gallery_index");
+            $acf_img_gallery_image = get_field("img_gallery_image$acf_img_gallery_index");
+        ?>
+        <?php if($acf_img_gallery_thumbnail != false && $acf_img_gallery_image != false): ?>
+            <?php
+                $has_featherlightimages = true;
+            ?>
+
+            <a href="<?php echo $acf_img_gallery_image["url"]; ?>" class="thumbnail gallery" >
+                <img class="img-gallery-thumb" src="<?php echo $acf_img_gallery_thumbnail["url"]; ?>" alt="<?php echo $acf_img_gallery_thumbnail["title"]; ?>" title="<?php echo $acf_img_gallery_thumbnail["title"]; ?>"  >
+            </a>
+        <?php endif; ?>
+
+    <?php endfor; ?>
+</div>
+
+<?php if($has_featherlightimages === true): ?>
+<script>
+    jQuery(function(){
+        jQuery('#gallery-container-<?php echo get_the_ID() ?> .gallery').featherlightGallery();
+    });
+</script>
+<?php endif; ?>
+<!-- featherlight gallery -- end -->
+
+<!-- custom images -- start -->
 <?php for($acf_img_index = 1;$acf_img_index<10;$acf_img_index++): ?>
 <?php
     /** Bilden */
@@ -59,6 +99,7 @@
 </div>
 <?php endif; ?>
 <?php endfor; ?>
+<!-- custom images -- end -->
 
 
 
