@@ -52,8 +52,7 @@
 
 		/* dimensions: cut off images */
 		overflow: hidden;
-		padding: 25px 25px 0;
-		border-bottom: 25px solid transparent;
+		padding: 0;
 
 		/* dimensions: handling small or empty content */
 		min-width:  30%;

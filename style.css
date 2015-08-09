@@ -6053,4 +6053,17 @@ p > video {
     text-indent: 0em;
 }
 
+/** Image Gallery **/
+
+.acf-custom-image img.img-gallery-thumb  {
+    padding: 1.923075%;
+    margin: 0.9615375%;
+    border: 1px solid #f3f3f3;
+    border-radius: 8px;
+    transition:  all 0.1s ease-in 0s;
+}
+
+.acf-custom-image img.img-gallery-thumb:hover {
+    border: 1px solid #dadada;
+}
 
