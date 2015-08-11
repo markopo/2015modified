@@ -10,6 +10,21 @@
  */
 ?>
 
+
+<?php
+    /**
+     * Show only uncategorized posts on startpage.
+     */
+
+     $isUnCategorized = get_post_class()[6] === 'category-okategoriserade';
+     $isCategoryPage = strpos($_SERVER['REQUEST_URI'], '/category') !== false;
+
+     if(!$isUnCategorized && !$isCategoryPage){
+        return;
+     }
+?>
+
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 		// Post thumbnail.
