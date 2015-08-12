@@ -39,8 +39,12 @@
 <!-- featherlight gallery -- start -->
 <?php
     $has_featherlightimages = false;
+    $acf_img_gallery_thumbnail_first = get_field("img_gallery_thumbnail1");
+    $acf_img_gallery_image_first = get_field("img_gallery_image1");
+    $has_not_any_featherlightimages = $acf_img_gallery_thumbnail_first === false && $acf_img_gallery_image_first === false;
 ?>
 
+<?php if(!$has_not_any_featherlightimages): ?>
 <div id="gallery-container-<?php echo get_the_ID() ?>" class="acf-custom-image hentry" >
     <?php
         $acf_gallery_title = get_field("img_gallery_title");
@@ -74,6 +78,7 @@
     });
 </script>
 <?php endif; ?>
+<?php endif; ?> 
 <!-- featherlight gallery -- end -->
 
 <!-- custom images -- start -->
