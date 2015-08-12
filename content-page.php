@@ -78,7 +78,7 @@
     });
 </script>
 <?php endif; ?>
-<?php endif; ?> 
+<?php endif; ?>
 <!-- featherlight gallery -- end -->
 
 <!-- custom images -- start -->
