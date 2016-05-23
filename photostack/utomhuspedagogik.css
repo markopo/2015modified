@@ -1,0 +1,33 @@
+#meny-utomhuspedagogik-1 {
+    margin-top: 7.6923%;
+    margin-bottom: 7.6923%;
+    padding-top: 4.16665%;
+    padding-bottom: 4.16665%;
+    display: table;
+}
+
+#meny-utomhuspedagogik-1 .meny-main-container {
+    display: block;
+    width: 100%;
+    padding: ;
+    display: table-row;
+}
+
+#meny-utomhuspedagogik-1 .meny-left-container {
+    display: table-cell;
+    width: 22%;
+    padding: 0 2.083325%;
+    text-align: center;
+}
+
+#meny-utomhuspedagogik-1 .utomhuspedagogik-meny {
+    list-style: none;
+    margin: 0;
+    padding: 1%;
+}
+
+#meny-utomhuspedagogik-1 .utomhuspedagogik-text {
+    display: table-cell;
+    width: 55%;
+    padding: 0 2.083325%;
+}

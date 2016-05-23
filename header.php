@@ -24,8 +24,16 @@
 
     <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/featherlight/featherlight.css" rel="stylesheet" type="text/css" >
     <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/featherlight/featherlight.gallery.css" rel="stylesheet" type="text/css" >
+
+    <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/photostack/component.css" rel="stylesheet" type="text/css" >
+    <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/photostack/utomhuspedagogik.css" rel="stylesheet" type="text/css" >
+
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/featherlight/featherlight.js" ></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/featherlight/featherlight.gallery.js" ></script>
+
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/photostack/modernizr.min.js" ></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/photostack/classie.js" ></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/photostack/photostack.js" ></script>
 
 </head>
 

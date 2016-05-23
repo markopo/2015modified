@@ -122,6 +122,114 @@
 <?php endif; ?>
 
 
+<!-- utomhuspedagogik - meny -- start -->
+<?php
+$acf_ped_meny_index = 1;
+$acf_ped_meny_titel = get_field("meny_titel$acf_ped_meny_index");
+$acf_ped_meny_text = get_field("meny_text$acf_ped_meny_index");
+$has_ped_meny_content = $acf_ped_meny_titel != false && $acf_ped_meny_text;
+?>
+
+<?php if($has_ped_meny_content): ?>
+    <section id="meny-utomhuspedagogik-1" class="hentry">
+        <div class="meny-main-container" >
+            <div class="meny-left-container" >
+                <ul class="utomhuspedagogik-meny" >
+                    <?php for($acf_ped_meny_index=1;$acf_ped_meny_index<=5;$acf_ped_meny_index++): ?>
+                        <?php $acf_ped_meny_titel = get_field("meny_titel$acf_ped_meny_index"); ?>
+                        <li><a href="#utomhuspedagogik-text-<?php echo $acf_ped_meny_index ?>"><?php echo $acf_ped_meny_titel ?></a></li>
+                    <?php endfor; ?>
+                </ul>
+            </div>
+            <?php for($acf_ped_meny_index=1;$acf_ped_meny_index<=5;$acf_ped_meny_index++): ?>
+                <div style="display:none;" class="utomhuspedagogik-text" id="utomhuspedagogik-text-<?php echo $acf_ped_meny_index ?>">
+                    <?php $acf_ped_meny_text = get_field("meny_text$acf_ped_meny_index"); ?>
+                    <?php echo $acf_ped_meny_text ?>
+                </div>
+            <?php endfor; ?>
+        </div>
+    </section>
+
+    <script>
+        jQuery(function() {
+            jQuery("#meny-utomhuspedagogik-1").find(".utomhuspedagogik-text").hide(10);
+            jQuery("#meny-utomhuspedagogik-1").find("#utomhuspedagogik-text-1").fadeIn();
+
+            window.onhashchange = function () {
+                var hash = window.location.hash;
+                console.log(hash);
+                if(hash.indexOf("#utomhuspedagogik-text") > -1){
+                    console.log(hash);
+                    var ped_meny_text =  jQuery(hash);
+                    if(ped_meny_text.length > 0) {
+                        jQuery("#meny-utomhuspedagogik-1").find(".utomhuspedagogik-text").hide(10);
+                        ped_meny_text.fadeIn();
+                    }
+                }
+            };
+
+        });
+    </script>
+<?php endif; ?>
+<!-- utomhuspedagogik - meny -- end -->
+
+
+<!-- utomhuspedagogik - imagegallery - start -->
+<?php
+$acf_ped_tum_index = 1;
+$acf_ped_tumbild = get_field("tum_bild$acf_ped_tum_index");
+$acf_ped_stor_galleri_bild = get_field("stor_galleri_bild$acf_ped_tum_index");
+$has_ped_gallery_pictures = $acf_ped_tumbild != false || $acf_ped_stor_galleri_bild != false;
+?>
+
+<?php if($has_ped_gallery_pictures): ?>
+<section id="photostack-utomhuspedagogik-1" class="photostack photostack-start page-content page type-page hentry">
+    <div>
+<?php endif; ?>
+
+
+<?php for($acf_ped_tum_index = 1;$acf_ped_tum_index<=10;$acf_ped_tum_index++): ?>
+<?php
+    $acf_ped_tumbild = get_field("tum_bild$acf_ped_tum_index");
+    $acf_ped_stor_galleri_bild = get_field("stor_galleri_bild$acf_ped_tum_index");
+    $has_ped_gallery_pictures = $acf_ped_tumbild != false || $acf_ped_stor_galleri_bild != false;
+?>
+
+<?php if($has_ped_gallery_pictures): ?>
+    <figure>
+        <a href="<?php echo $acf_ped_stor_galleri_bild != false ? $acf_ped_stor_galleri_bild['url'] : "#" ?>" class="photostack-img">
+            <img src="<?php echo $acf_ped_tumbild['url'] ?>" alt="<?php echo $acf_ped_tumbild['title'] ?>" />
+        </a>
+        <figcaption>
+            <h2 class="photostack-title"></h2>
+        </figcaption>
+    </figure>
+<?php endif; ?>
+
+<?php endfor; ?>
+
+<?php if($has_ped_gallery_pictures): ?>
+    </div>
+</section>
+<?php endif; ?>
+
+
+<?php if($has_ped_gallery_pictures): ?>
+    <script>
+        jQuery(function() {
+            new Photostack( document.getElementById( 'photostack-utomhuspedagogik-1' ), {
+                callback : function( item ) {
+                    //console.log(item)
+                }
+            } );
+        });
+    </script>
+<?php endif; ?>
+<!-- utomhuspedagogik - imagegallery - end -->
+
+
+
+
 
 
 
